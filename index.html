@@ -10,67 +10,68 @@
 </head>
 
 <body>
+    <div class="main-container">
+        <form class="form" name="myform" onsubmit="validation(event)">
 
-    <form class="form" name="myform" onsubmit="validation(event)">
+            <div class="container">
+                <p>
+                    <label for="Firstname">First name : </label>
+                    <input type="text" name="FirstName" value="" placeholder="Enter first your name" required />
+                </p>
+                <p>
+                    <label>Last name : </label>
+                    <input name="Lastname" type="text" value="" placeholder="Enter your last name" required />
+                </p>
+                <p>
+                    <label for="number">Your Number : </label>
+                    <input type="number" name="number" value="" placeholder="Your Number " />
+                </p>
 
-        <div class="container">
-            <p>
-                <label for="Firstname">First name : </label>
-                <input type="text" name="FirstName" value="" placeholder="Enter first your name" required/>
-            </p>
-            <p>
-                <label>Last name : </label>
-                <input name="Lastname" type="text" value="" placeholder="Enter your last name" required />
-            </p>
-            <p>
-                <label for="number">Your Number : </label>
-                <input type="number" name="number" value="" placeholder="Your Number "/>
-            </p>
+                <p>
+                    <label for="lang"> Language : </label>
+                    <select name="language" id="lang">
+                        <option value="hindi">Hindi</option>
+                        <option value="english">English</option>
+                    </select>
+                </p>
 
-            <p>
-                <label for="lang"> Language : </label>
-                <select name="language" id="lang" >
-                    <option value="hindi">Hindi</option>
-                    <option value="english">English</option>
-                </select>
-            </p>
+                <p>
+                    <label for="gender"> Gender : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</label>
 
-            <p>
-                <label for="gender"> Gender : &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</label>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male" />
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female" />
+                </p>
 
-                <label for="male">Male</label>
-                <input type="radio" name="gender" value="male" />
-                <label for="female">Female</label>
-                <input type="radio" name="gender" value="female" />
-            </p>
+                <P>
+                    <label for="card">checkbox: </label>
+                    <input type="checkbox" name="card" value="pancard" />
+                    <label for="pancard"> Pancard </label>
+                    <input type="checkbox" name="card" value="votercard" />
+                    <label for="votercard">votercard</label>
+                    <input type="checkbox" name="card" value="adharcard" />
+                    <label for="adharcard">Adharcard</label>
+                    <input type="checkbox" name="card" value="Passport" />
+                    <label for="votercard">Passport</label>
+                </P>
 
-            <P>
-                <label for="card">checkbox: </label>
-                <input type="checkbox" name="card" value="pancard" />
-                <label for="pancard"> Pancard </label>
-                <input type="checkbox" name="card" value="votercard" />
-                <label for="votercard">votercard</label>
-                <input type="checkbox" name="card" value="adharcard" />
-                <label for="adharcard">Adharcard</label>
-                <input type="checkbox" name="card" value="Passport" />
-                <label for="votercard">Passport</label>
-            </P>
+                <p>
+                    <label for="range">Rate your self : </label>
+                    <input name="Rate Your Self" id="range" min="0" max="10" type="range" />
+                </p>
 
-            <p>
-                <label for="range">Rate your self : </label>
-                <input name="Rate Your Self" id="range" min="0" max="10" type="range" />
-            </p>
-
-            <p><label for="message">Your Querry :</label>
-                <textarea id="message" name="message" placeholder="Enter text here"></textarea>
-            </p>
-            <P>
-                <label for="color">Secret word as a color:</label>
-                <input name="Secret message as a color" type="color" value="">
-            </P>
-            <input  class="btn" type="submit" name="button" onclick=""><br>
-        </div>
-    </form>
+                <p><label for="message">Your Querry :</label>
+                    <textarea id="message" name="message" placeholder="Enter text here"></textarea>
+                </p>
+                <P>
+                    <label for="color">Secret word as a color:</label>
+                    <input name="Secret message as a color" type="color" value="">
+                </P>
+                <input class="btn" type="submit" name="button" onclick=""><br>
+            </div>
+        </form>
+    </div>
     <script src="main.js"></script>
 </body>
 
